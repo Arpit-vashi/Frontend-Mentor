@@ -3,14 +3,58 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Frontend Mentor | Results summary component</title>
   <link rel="stylesheet" href="./Styles/index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-  <div class="maincard">
-    <div class="">
-
-    </div>
+<!--Main Container-->
+<div class="container">
+  <div class="hero">
+  <!--Left Hero Starts-->
+  <div class="left-hero">
+  <h2>Your Result</h2>
+  <div class="scored">
+    <strong>76</strong>
+  of 100
+  </div>
+  <h1>Great</h1>
+  <p>You scored higher than 65% of the people who have taken these tests.</p>
+</div>
+<!--Left Hero Ends-->
+<!--Right Hero Starts-->
+<div class="right-hero">
+ <h2 class="lh-heading">Summary</h2>
+<div class="box1">
+  <img src="./assets/images/icon-reaction.svg" alt="" class="box-logo">
+  Reaction
+  <div class="marks"><strong>80</strong> / 100</div>
+</div>
+  <div class="box2">
+    <img src="./assets/images/icon-memory.svg" alt="" class="box-logo">
+    Memory
+    <div class="marks"><strong>92</strong> / 100</div>
+  </div>
+<div class="box3">
+  <img src="./assets/images/icon-verbal.svg" alt="" class="box-logo">
+  Verbal
+  <div class="marks3"><strong>61</strong> / 100</div>
+</div> 
+<div class="box4">
+  <img src="./assets/images/icon-visual.svg" alt="" class="box-logo">
+  Visual
+   <div class="marks4"><strong>72</strong> / 100</div>
+</div>
+<button class="continue">Continue</button>
+</div>
+<!--Right Hero Ends-->
+</div>
+</div>
+<!--Main Container Ends-->
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor </a>. 
+    Coded by <a href="#"><i class="fa-solid fa-heart" style="color: #ff0000;"></i>Arpit Vashi</a>.
   </div>
 </body>
 </html>

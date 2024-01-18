@@ -1,0 +1,110 @@
+@import url('https://fonts.google.com/specimen/Outfit');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: ;
+    font-family: Outfit;
+}
+
+.outer-container {
+    height: 100vh;
+    width: 100%;
+    background-color: hsl(217, 54%, 11%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    background-color: hsl(216, 50%, 16%);
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 10px 10px, 10px 10px;
+}
+
+.card-image img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.card-heading h1 {
+    font-size: 18px;
+    color: white;
+    font-weight: 600;
+    padding-top: 1rem;
+}
+
+.card-desc p {
+    color: hsl(215, 51%, 70%);
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+}
+
+.eth {
+    display: flex;
+    padding-top: 1rem;
+    font-size: x-small;
+    align-items: baseline;
+}
+
+.eth .balance {
+    height: 15px;
+    color: cyan;
+    align-items: baseline;
+    font-weight: 400;
+}
+
+.eth-icon {
+    height: 13px;
+    padding-right: 5px;
+}
+
+.clock {
+    height: 13px;
+    padding-left: 6rem;
+    padding-right: 2px;
+}
+
+.time {
+    color: hsl(215, 51%, 70%);
+    font-weight: 400;
+    padding-left: -2rem;
+}
+
+.footer-part {
+    display: flex;
+    margin-top: 1rem;
+    border-top: solid 0.5px hsl(215, 51%, 70%);
+}
+
+.foot-con {
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+    margin-top: -10%;
+    margin-bottom: -10%;
+}
+
+.foot-con img {
+    height: 30%;
+    border: solid white 1px;
+    border-radius: 50%;
+}
+
+.foot-con h4 {
+    font-weight: 400;
+    color: hsl(215, 51%, 70%);
+    font-size: small;
+    padding-left: 0.5rem;
+}
+
+.foot-con p {
+    font-weight: 400;
+    color: white;
+    font-size: small;
+    padding-left: 0.5rem;
+}

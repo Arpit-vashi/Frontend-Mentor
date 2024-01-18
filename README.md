@@ -1,2 +1,0 @@
-# FrontEnd-Mentor-Solution
- 

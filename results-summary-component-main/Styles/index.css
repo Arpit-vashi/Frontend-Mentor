@@ -1,17 +1,205 @@
-* {
-    padding: 0px;
-    margin: 0px;
+@import url('https://fonts.google.com/specimen/Hanken+Grotesk');
+
+:root {
+    --Light-red: hsl(0, 100%, 67%);
+    --Orangey-yellow: hsl(39, 100%, 56%);
+    --Green-teal: hsl(166, 100%, 37%);
+    --Cobalt-blue: hsl(234, 85%, 45%);
+    --White: hsl(0, 0%, 100%);
+    --Pale-blue: hsl(221, 100%, 96%);
+    --Light-lavender: hsl(241, 100%, 89%);
+    --Dark-gray-blue: hsl(224, 30%, 27%);
+    --Light-slate-blue-bg: hsl(252, 100%, 67%);
+    --Light-royal-blue-bg: hsl(241, 81%, 54%);
+    --Violet-blue-o: hsla(256, 72%, 46%, 1);
+    --Persian-blue-o: hsla(241, 72%, 46%, 0);
 }
 
-body {
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Hanken Grotesk', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    background-color: var(--White);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.hero {
+    background-color: var(--White);
+    display: flex;
+    width: 43%;
+    border-radius: 5%;
+    background-color: white;
+    box-shadow: 10px 7px 9px var(--Light-lavender);
+}
+
+.left-hero {
+    background-image: linear-gradient(var(--Light-slate-blue-bg), var(--Light-royal-blue-bg));
+    width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    flex-direction: column;
+    border-radius: 5%;
 }
 
-.maincard {
+.left-hero h2 {
+    font-weight: 700;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+    color: var(--Light-lavender);
+}
+
+.scored {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: linear-gradient(var(--Light-royal-blue-bg), var(--Light-slate-blue-bg));
+    height: 11rem;
+    width: 11rem;
+    border-radius: 50%;
+    font-weight: 500;
+    margin-bottom: 1.3rem;
+}
+
+.scored {
+    color: var(--Light-lavender);
+}
+
+.scored strong {
+    font-size: 60px;
+    font-weight: 700;
+    color: var(--White);
+}
+
+.left-hero h1 {
+    color: var(--White);
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.left-hero p {
+    width: 80%;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    color: var(--Light-lavender);
+    font-size: 18px;
+}
+
+.right-hero {
+    margin-left: 2rem;
+}
+
+.right-hero h2 {
+    font-weight: 700;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+    color: var(--Dark-gray-blue);
+}
+
+.box1 {
+    width: 16rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    background-color: rgba(255, 87, 87, .1);
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+    color: var(--Light-red);
+}
+
+.box2 {
+    width: 16rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    background-color: rgba(255, 176, 31, .1);
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+    color: var(--Orangey-yellow);
+}
+
+.box3 {
+    width: 16rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    background-color: rgba(166, 100, 37, .1);
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+    color: var(--Green-teal);
+}
+
+.box4 {
+    width: 16rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    background-color: rgba(17, 37, 212, .1);
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+    color: var(--Cobalt-blue);
+}
+
+.box-logo {
+    margin-left: 1rem;
+    margin-right: 5px;
+}
+
+.marks {
+    margin-left: 30%;
+    color: var(--Dark-gray-blue);
+}
+
+.marks3 {
+    margin-left: 36%;
+    color: var(--Dark-gray-blue);
+}
+
+.marks4 {
+    margin-left: 36%;
+    color: var(--Dark-gray-blue);
+}
+
+.continue {
+    background-image: linear-gradient(var(--Dark-gray-blue), var(--Dark-gray-blue));
+    width: 100%;
+    height: 3rem;
+    margin-top: 1rem;
+    color: var(--White);
+    font-weight: 500;
+    border-radius: 30px;
+    border: var(--Dark-gray-blue);
+}
+
+.continue:hover {
+    background-image: linear-gradient(var(--Light-slate-blue-bg), var(--Light-royal-blue-bg));
+    cursor: pointer;
+    border: var(--Light-royal-blue-bg);
+}
+
+.attribution {
     background-color: black;
-    height: 70%;
-    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.attribution a {
+    text-decoration: none;
+    color: white;
+}
+
+.fa-heart {
+    margin-left: 3px;
+    margin-right: 3px;
 }

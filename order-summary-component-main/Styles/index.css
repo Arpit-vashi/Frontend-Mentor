@@ -1,0 +1,161 @@
+@import url('https://fonts.google.com/specimen/Red+Hat+Display');
+
+:root {
+    --Paleblue: hsl(225, 100%, 90%);
+    --Brightblue: hsl(245, 75%, 52%);
+    --Verypaleblue: hsl(225, 100%, 99%);
+    --Desaturatedblue: hsl(224, 23%, 55%);
+    --Darkblue: hsl(223, 47%, 23%);
+}
+
+* {
+    font-family: 'Red Hat Display', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+    background-image: url(../images/pattern-background-desktop.svg);
+    background-position: top;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: var(--Desaturatedblue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: min-content;
+    height: min-content;
+    background-color: white;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-img {
+    width: 375px;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.card p {
+    width: 70%;
+}
+
+.card h1 {
+    color: var(--Darkblue);
+    font-size: x-large;
+    padding-top: 2rem;
+    font-weight: 900;
+}
+
+.card a {
+    color: var(--Brightblue);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.card a:hover {
+    color: var(--Paleblue);
+}
+
+.par-content {
+    display: flex;
+    color: var(--Verypaleblue);
+    margin-top: 1rem;
+    text-align: center;
+    color: var(--Desaturatedblue);
+    font-weight: 400;
+}
+
+.plan {
+    background-color: var(--Verypaleblue);
+    border-radius: 10px;
+    width: 90%;
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+    margin-top: 1rem;
+    padding: 20px;
+    margin-bottom: 2rem;
+}
+
+.plan img {
+    height: 40px;
+}
+
+.plan-type {
+    margin-top: -20px;
+    margin-left: 5px;
+    font-weight: 700;
+    font-size: medium;
+    color: var(--Darkblue);
+}
+
+.price-amt {
+    position: absolute;
+    margin-left: 45px;
+    margin-top: 20px;
+    font-size: small;
+    color: var(--Paleblue);
+    font-weight: 500;
+}
+
+.payment {
+    width: 90%;
+    height: 2.5rem;
+    background-color: var(--Brightblue);
+    color: white;
+    border: 0px;
+    border-color: var(--Brightblue);
+    border-radius: 10px;
+    font-weight: 700;
+}
+
+.payment:hover {
+    background-color: var(--Desaturatedblue);
+    cursor: pointer;
+}
+
+.cancel-button {
+    display: flex;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.cancel-button a {
+    text-decoration: none;
+    color: var(--Desaturatedblue);
+}
+
+.cancel-button a:hover {
+    text-decoration: none;
+    color: var(--Darkblue);
+}
+
+.attribution {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+.attribution a {
+    text-decoration: none;
+    color: white;
+}
+
+.attribution p {
+    color: white;
+    margin-left: 10px;
+}
+
+.fa-heart {
+    margin-left: 10px;
+}
